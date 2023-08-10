@@ -1,3 +1,5 @@
+import clientPromise from "@/lib/mongodb";
+import { MongoDBAdapter } from "@auth/mongodb-adapter";
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 
@@ -27,4 +29,6 @@ export default NextAuth({
     //   from: "NextAuth.js <no-reply@example.com>",
     // }),
   ],
+  // lets add the adapter here
+  adapter: MongoDBAdapter(clientPromise),
 });
