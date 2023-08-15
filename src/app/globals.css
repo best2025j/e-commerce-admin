@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+input, textarea {
+    @apply border-blue-900 border rounded-xl px-2 w-80 flex flex-col p-1;
+    @apply mb-2;
+}
+
+label {
+    @apply text-blue-900 capitalize font-medium;
+}
+
+input:hover, input:focus, textarea:hover, textarea:focus {
+    @apply border-slate-400;
+}
+
+h1 {
+    @apply text-blue-900 mb-2 text-xl capitalize;
+}
+
+.btn-primary {
+    @apply bg-[#4d4de6] text-white px-8 py-1 rounded-full capitalize;
+}

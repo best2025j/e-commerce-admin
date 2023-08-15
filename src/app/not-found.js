@@ -4,6 +4,11 @@ import image from "../../Assets/images/ErrorPage.png";
 import Link from "next/link";
 
 export default function NotFound() {
+  // const click = (e) => {
+  //   e.preventDefault();
+  //   router.push(href);
+  // };
+
   return (
     <div className="h-full md:flex justify-center items-center w-full py-40">
       <div className="space-y-[50px] px-14">

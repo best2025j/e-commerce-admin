@@ -20,7 +20,7 @@ export default function Layout({ children }) {
   // }
 
   return (
-    <div className="bg-[#4d4de6] min-h-screen flex">
+    <div className="bg-[#4d4de6] min-h-screen flex ">
       <Nav />
       <div className="bg-white flex-grow mt-1 mr-2 mb-2 rounded-2xl p-4">
         {children}
